@@ -34,13 +34,9 @@
                 </Setter.Value>
             </Setter>
         </Style>
-        <Style TargetType="{x:Type Button}">
-            <Style.Triggers>
-                <Trigger Property="IsMouseOver" Value="True">
-                    <Setter Property="Background" Value="#FFF0F0F0" />
-                </Trigger>
-            </Style.Triggers>
-        </Style>
+        <!-- ///////////////////////////////////////////////// -->
+        
+        <!-- ///////////////////////////////////////////////// -->
         <Style TargetType="{x:Type DatePickerTextBox}">
             <Setter Property="Background" Value="Transparent"/>
             <Setter Property="BorderThickness" Value="0"/>
@@ -53,7 +49,7 @@
                 <Grid Background="#FFF0F0F0" Margin="-4" HorizontalAlignment="Left" Width="433">
                     <Label x:Name="lQualityCheck" Content="Quality Check" Margin="82,25,82,203" FontSize="36" FontFamily="Franklin Gothic Book" Foreground="#FF999999" RenderTransformOrigin="0.5,0.46" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold"/>
                     <TextBlock Margin="100,90,100,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="#FF999999" TextAlignment="Center" FontFamily="Franklin Gothic Book" TextDecorations="{x:Null}" Height="69"><Run Text="Measure the weekly"/><LineBreak/><Run Text="and monthly quality "/><LineBreak/><Run Text="of team's daily processing"/></TextBlock>
-                    <Button x:Name="btStartMeasuring" Content="Start measuring" Margin="125,219,125,0" VerticalAlignment="Top" Click="btStartMeasuring_Click" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF75A9F9" BorderThickness="0" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" IsDefault="True" HorizontalAlignment="Stretch"/>
+                    <Button x:Name="btStartMeasuring" Content="Start measuring" Margin="125,219,125,0" VerticalAlignment="Top" Click="btStartMeasuring_Click" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF75A9F9" BorderThickness="0" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" HorizontalAlignment="Stretch"/>
                 </Grid>
             </TabItem>
             <TabItem x:Name="tiPrepare" Header="Prepare" Margin="1,-2,-61,-1" FontSize="18" FontFamily="Franklin Gothic Book">
@@ -69,7 +65,7 @@
                     <Label x:Name="lEndDate" Content="End date:" Margin="255,140,42,104" FontSize="18" FontFamily="Franklin Gothic Book" Foreground="#FF999999" HorizontalContentAlignment="Left" VerticalContentAlignment="Top"/>
                     <TextBox x:Name="tbEndDate" Text="" BorderThickness="0,0,1,0" BorderBrush="#FF999999"  Background="Transparent" Width="90" Height="20" Foreground="#FF999999" FontFamily="Franklin Gothic Book" FontSize="14" Margin="260,170,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" TextAlignment="Right" Focusable="False" AllowDrop="False"/>
                     <DatePicker x:Name="dpCalendarEnd" HorizontalAlignment="Left" Margin="351,167,0,0" VerticalAlignment="Top" SelectedDateFormat="Short" FirstDayOfWeek="Monday" FontSize="16" FontFamily="Franklin Gothic Book" Foreground="#FF999999" BorderThickness="0" Width="30" CalendarClosed="dpCalendarEnd_CalendarClosed"/>
-                    <Button x:Name="btMeasure" Content="Measure" Margin="125,219,125,0" VerticalAlignment="Top" Click="btMeasure_Click" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF75A9F9" BorderThickness="0" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" IsDefault="True" HorizontalAlignment="Stretch"/>
+                    <Button x:Name="btMeasure" Content="Measure" Margin="125,219,125,0" VerticalAlignment="Top" Click="btMeasure_Click" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF75A9F9" BorderThickness="0" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" HorizontalAlignment="Stretch"/>
                 </Grid>
             </TabItem>
             <TabItem x:Name="tiSummary" Header="Summary" Margin="64,-2,-65,-1" FontSize="18" FontFamily="Franklin Gothic Book" HorizontalAlignment="Left" Width="141">
@@ -87,7 +83,7 @@
                         <ComboBoxItem Content="Processor Name"/>
                         <ComboBoxItem Content="Company Code"/>
                     </ComboBox>
-                    <Button x:Name="btSummarize" Content="Summarize" Margin="125,219,125,0" VerticalAlignment="Top" Click="btMeasure_Click" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF75A9F9" BorderThickness="0" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" IsDefault="True" HorizontalAlignment="Stretch"/>
+                    <Button x:Name="btSummarize" Content="Summarize" Margin="125,219,125,0" VerticalAlignment="Top" Click="btMeasure_Click" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF75A9F9" BorderThickness="0" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" HorizontalAlignment="Stretch"/>
                 </Grid>
             </TabItem>
         </TabControl>

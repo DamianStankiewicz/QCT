@@ -15,25 +15,6 @@ using System.Windows.Shapes;
 
 namespace QCTool
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
-    /// 
-
-    //public class CustomWatermarkedDatePicker : DatePicker
-    //{
-    //    public override void OnApplyTemplate()
-    //    {
-    //        base.OnApplyTemplate();
-
-    //        DatePickerTextBox box = base.GetTemplateChild("PART_TextBox") as DatePickerTextBox;
-    //        box.ApplyTemplate();
-
-    //        ContentControl watermark = box.Template.FindName("PART_Watermark", box) as ContentControl;
-    //        watermark.Content = "";
-    //    }
-    //}
-
     public partial class MainWindow : Window
     {
         public MainWindow()
@@ -41,19 +22,14 @@ namespace QCTool
             InitializeComponent();
         }
 
-        private void TabControl_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void btMeasure_Click(object sender, RoutedEventArgs e)
         {
-
+            MessageBox.Show("asdasd");
         }
 
         private void btStartMeasuring_Click(object sender, RoutedEventArgs e)
         {
             MessageBox.Show("sadasd");
-        }
-
-        private void btMeasure_Click(object sender, RoutedEventArgs e)
-        {
-            MessageBox.Show("asdasd");
         }
 
         private void dpCalendarStart_CalendarClosed(object sender, RoutedEventArgs e)
